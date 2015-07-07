@@ -1,0 +1,15 @@
+{
+    "name": "fruition-sciences/zendframework",
+    "description": "Fruition Sciences fork of Zendframework 1.",
+    "type": "library",
+    
+    "autoload": {
+         "psr-0": {
+             "Zend_": "library/"
+          },
+          "classmap": ["library/Fruition/"]
+     },
+     "include-path": [
+         "library/"
+     ]
+}
