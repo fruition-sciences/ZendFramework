@@ -38,6 +38,7 @@ class Fruition_Measure_One extends Zend_Measure_Abstract
     const INDEX = 'INDEX';
     const FRACTION = 'FRACTION';
     const PPM = 'PPM';
+    const BERRY_NUMBER_PER_CLUSTER = 'BERRY_NUMBER_PER_CLUSTER';
 
 
     /**
@@ -56,9 +57,10 @@ class Fruition_Measure_One extends Zend_Measure_Abstract
         'INDEX'                  => array('1',            ''),
         'FRACTION'               => array('100',          ''),
         'PPM'                    => array('1',            'ppm'),
-        'STANDARD'               => 'PERCENTAGE'
+        'STANDARD'               => 'PERCENTAGE',
+        'BERRY_NUMBER_PER_CLUSTER'=>array('1',            'berry/cluster')
     );
-    
+
     /**
      * Override the default constructor for units translation.
      */
@@ -68,5 +70,6 @@ class Fruition_Measure_One extends Zend_Measure_Abstract
         $this->_units['NODE_PER_VINE'][1] = Application::getTranslator()->_('node') . '/' . Application::getTranslator()->_('vine');
         $this->_units['SHOOT_PER_VINE'][1] = Application::getTranslator()->_('shoot') . '/' . Application::getTranslator()->_('vine');
         $this->_units['CLUSTER_PER_VINE'][1] = Application::getTranslator()->_('cluster') . '/' . Application::getTranslator()->_('vine');
+        $this->_units['BERRY_NUMBER_PER_CLUSTER'][1] = Application::getTranslator()->_('berry') . '/' . Application::getTranslator()->_('cluster');
     }
 }
