@@ -71,8 +71,8 @@ class Fruition_Measure_One extends Zend_Measure_Abstract
         parent::__construct($value, $type, $locale);
         $this->_units['NODE_PER_VINE'][1] = Application::getTranslator()->_('node') . '/' . Application::getTranslator()->_('vine');
         $this->_units['SHOOT_PER_VINE'][1] = Application::getTranslator()->_('shoot') . '/' . Application::getTranslator()->_('vine');
-        $this->_units['CLUSTER_PER_VINE'][1] = Application::getTranslator()->_('cluster') . '/' . Application::getTranslator()->_('vine');
-        $this->_units['BERRY_NUMBER_PER_CLUSTER'][1] = Application::getTranslator()->_('berry') . '/' . Application::getTranslator()->_('cluster');
-        $this->_units['CLUSTER_NUMBER_PER_VINE'][1] = Application::getTranslator()->_('cluster') . '/' . Application::getTranslator()->_('vine');
+        $this->_units['CLUSTER_PER_VINE'][1] = Application::getTranslator()->_('clusters') . '/' . Application::getTranslator()->_('vine');
+        $this->_units['BERRY_NUMBER_PER_CLUSTER'][1] = Application::getTranslator()->_('berries') . '/' . Application::getTranslator()->_('cluster');
+        $this->_units['CLUSTER_NUMBER_PER_VINE'][1] = Application::getTranslator()->_('clusters') . '/' . Application::getTranslator()->_('vine');
     }
 }
