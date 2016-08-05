@@ -28,6 +28,8 @@ class Fruition_Measure_Weight_Per_Area extends Zend_Measure_Abstract
     const STANDARD = 'GRAM_PER_SQUARE_METER';
 
     const GRAM_PER_SQUARE_METER  = 'GRAM_PER_SQUARE_METER';
+    const MILLIGRAM_PER_SQUARE_CENTIMETER  = 'MILLIGRAM_PER_SQUARE_CENTIMETER';
+    const MICROGRAM_PER_SQUARE_CENTIMETER  = 'MICROGRAM_PER_SQUARE_CENTIMETER';
     const KILOGRAM_PER_HECTARE = 'KILOGRAM_PER_HECTARE';
     const TONNE_PER_HECTARE = 'TONNE_PER_HECTARE';
     const TON_US_PER_ACRE = 'TON_US_PER_ACRE';
@@ -42,6 +44,8 @@ class Fruition_Measure_Weight_Per_Area extends Zend_Measure_Abstract
      */
     protected $_units = array(
         'GRAM_PER_SQUARE_METER'           => array('1',                  'g/m²'),
+        'MILLIGRAM_PER_SQUARE_CENTIMETER' => array('10',                 'mg/cm²'),
+        'MICROGRAM_PER_SQUARE_CENTIMETER' => array('0.01',               'μg/cm²'),
         'KILOGRAM_PER_HECTARE'            => array('0.1',                'kg/ha'),
         'TONNE_PER_HECTARE'               => array('100',                't/ha'),
         'TON_US_PER_ACRE'                 => array('224.1702',           't/A'),
